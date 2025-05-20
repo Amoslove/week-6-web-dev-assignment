@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+#magicBtn {
+  padding: 10px 20px;
+  background-color: coral;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#hoverBox {
+  width: 200px;
+  height: 100px;
+  background: lightblue;
+  margin-top: 20px;
+  line-height: 100px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+#hoverBox:hover {
+  background: blue;
+  color: white;
+}
+
+.gallery img {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.tab-content {
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+input {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+}

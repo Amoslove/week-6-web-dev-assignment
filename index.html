@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Event Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Welcome to Event World</h1>
+
+  <!-- Button Event -->
+  <button id="magicBtn">Click me!</button>
+
+  <!-- Hover Element -->
+  <div id="hoverBox">Hover over me!</div>
+
+  <!-- Keypress Display -->
+  <p id="keyDisplay">Press any key...</p>
+
+  <!-- Image Gallery -->
+  <div class="gallery">
+    <img id="mainImg" src="https://via.placeholder.com/300" alt="Main Image" />
+    <div class="thumbnails">
+      <img src="https://via.placeholder.com/100" onclick="changeImage(this)" />
+      <img src="https://via.placeholder.com/101" onclick="changeImage(this)" />
+      <img src="https://via.placeholder.com/102" onclick="changeImage(this)" />
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button onclick="showTab('tab1')">Tab 1</button>
+    <button onclick="showTab('tab2')">Tab 2</button>
+    <div id="tab1" class="tab-content">Content for Tab 1</div>
+    <div id="tab2" class="tab-content hidden">Content for Tab 2</div>
+  </div>
+
+  <!-- Form Validation -->
+  <form id="myForm">
+    <input type="text" id="username" placeholder="Username (required)" required />
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="password" id="password" placeholder="Password (min 8 chars)" required />
+    <button type="submit">Submit</button>
+    <p id="formFeedback"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
